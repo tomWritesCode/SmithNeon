@@ -11,7 +11,8 @@ document.getElementById("openClose").addEventListener("click", function() {
 		document.getElementById("y").classList.add("yClose");
 		document.getElementById("y").classList.remove("yOpen");
 		document.getElementById("menu").classList.remove("slideMenuOpen");
-		console.log("Opened");
+    console.log("Opened");
+    
 	} else {
 		document.getElementById("menu").classList.remove("menuMobileOpen");
 		document.getElementById("x").classList.remove("xClose");
@@ -20,5 +21,6 @@ document.getElementById("openClose").addEventListener("click", function() {
 		document.getElementById("y").classList.add("yOpen");
 		document.getElementById("menu").classList.add("slideMenuOpen");
 		console.log("Closed");
-	}
+  }
+  
 });

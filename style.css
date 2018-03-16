@@ -15,30 +15,30 @@ li {
 /* Open / Close Button */
 
 .openClose {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color: #023963;
 }
 
 .x,
 .y {
-  height: 30px;
+  height: 40px;
   width: 4px;
   background-color: white;
   border-radius: 4px;
   position: absolute;
   top: 10px;
-  left: 21px;
+  left: 26px;
 }
 
 .xOpen {
-  top: 17px;
+  top: 20px;
   transform: rotate(60deg);
   transition: 300ms ease-in-out;
 }
 
 .yOpen {
-  top: 4px;
+  top: 1px;
   transform: rotate(-60deg);
   transition: 300ms ease-in-out;
 }
