@@ -141,7 +141,7 @@ a.neon2:hover {
     opacity: .6;
   }
   20% {
-    opacity: .3;
+    opacity: .5;
     text-shadow: 0 0 5px #fff, 0 0 6px #00bcd4, 0 0 12px #00bcd4, 0 0 18px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 50px #00bcd4;
   }
   22% {
@@ -150,8 +150,14 @@ a.neon2:hover {
   24% {
     opacity: 1;
   }
-  84% {
+  83% {
     opacity: 1;
+  }
+  84%{
+    opacity: .6;
+  }
+  85%{
+    opacity: .8;
   }
   86% {
     opacity: .4;
