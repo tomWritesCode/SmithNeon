@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: #023963;;
 }
 
 a {
@@ -17,9 +18,13 @@ li {
 .openClose {
   height: 60px;
   width: 60px;
-  background-color: #023963;
+  background-color: #031b2e;
+  border-radius: 0 0 4px 0;
 }
-
+.openCorner{
+  transition: 500ms ease-in-out;
+  border-radius:unset;
+}
 .x,
 .y {
   height: 40px;
@@ -29,18 +34,19 @@ li {
   position: absolute;
   top: 10px;
   left: 26px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
 }
 
 .xOpen {
   top: 20px;
   transform: rotate(60deg);
-  transition: 300ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 .yOpen {
   top: 1px;
   transform: rotate(-60deg);
-  transition: 300ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 .xClose {
@@ -56,17 +62,22 @@ li {
 /* Menu Styling */
 
 .menu {
-  margin-left: -110%;
+  margin-left: -200%;
   height: 50vh;
-  width: 70vw;
-  background-color: #023963;
+  width: 20vw;
+  background-color: #031b2e;
   border-radius: 0 10px 10px 0;
   transition: 500ms ease-in-out;
+}
+@media(max-width: 500px){
+  .menu{
+    width: 70vw;
+  }
 }
 
 .menuMobileOpen {
   margin-left: 0;
-  transition: 500ms ease-in-out;
+  transition: 800ms ease-in-out;
 }
 
 .menuContainer {
@@ -81,22 +92,30 @@ a {
   height: calc(50vh/4);
   line-height: calc(50vh/4);
   font-size: 28px;
+  background-color: #031b2e;
 }
 
-a:hover {
-  background-color: #0d47a1;
+a.neon1:hover {
+  border: solid 5px ;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ae52d4, 0 0 20px #ae52d4, 0 0 30px #ae52d4, 0 0 40px #ae52d4;
+}
+a.neon2:hover {
+  border: solid 5px ;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
 }
 
 .neon1 {
   /* Blue */
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4, 0 0 55px #00bcd4, 0 0 100px #00bcd4;
+  text-shadow: 0 0 5px #fff, 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4, 0 0 55px #00bcd4, 0 0 70px #00bcd4;
 }
 
 .neon2 {
   /* Purple */
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #ae52d4, 0 0 20px #ae52d4, 0 0 30px #ae52d4, 0 0 40px #ae52d4, 0 0 55px #ae52d4, 0 0 100px #ae52d4;
+  text-shadow: 0 0 5px #fff, 0 0 10px #ae52d4, 0 0 20px #ae52d4, 0 0 30px #ae52d4, 0 0 40px #ae52d4, 0 0 55px #ae52d4, 0 0 70px #ae52d4;
 }
 
 .neonFlicker {
