@@ -128,6 +128,7 @@ a.neon2:hover {
 
 .neonFlicker {
   animation: neonFlicker 4s infinite;
+  z-index: -1;
 }
 
 @keyframes neonFlicker {
@@ -142,7 +143,7 @@ a.neon2:hover {
   }
   20% {
     opacity: .5;
-    text-shadow: 0 0 5px #fff, 0 0 6px #00bcd4, 0 0 12px #00bcd4, 0 0 18px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 50px #00bcd4;
+    text-shadow: 0 0 5px #fff, 0 0 6px #ae52d4, 0 0 12px #ae52d4, 0 0 18px #ae52d4, 0 0 20px #ae52d4, 0 0 30px #00bcd4, 0 0 50px #ae52d4;
   }
   22% {
     opacity: .6;
@@ -161,7 +162,7 @@ a.neon2:hover {
   }
   86% {
     opacity: .4;
-    text-shadow: 0 0 5px #fff, 0 0 6px #00bcd4, 0 0 12px #00bcd4, 0 0 18px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 50px #00bcd4;
+    text-shadow: 0 0 5px #fff, 0 0 6px #ae52d4, 0 0 12px #ae52d4, 0 0 18px #ae52d4, 0 0 20px #ae52d4, 0 0 30px #ae52d4, 0 0 50px #ae52d4;
   }
   89% {
     opacity: .8;
